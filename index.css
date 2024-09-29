@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-size: 1.1rem;
+}
+
+:root {
+  --main-color: #ff2c1f;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(220, 37, 37);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin-top: 64px;
+}
+
+.navbar {
+  z-index: 1000;
+  max-height: 64px;
+}
+
+.navbar ul {
+  max-height: 47px;
+}
+
+.offcanvas-title {
+}
+
+.nav-link {
+}
+
+.nav-link::after {
+  content: "";
+  width: 0;
+  display: block;
+  height: 0px;
+  background-color: var(--main-color);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  height: 2px;
+  animation: slide-in 0.3s ease-in-out forwards;
+}
+
+.navbar-brand {
+}
+
+@keyframes slide-in {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+.navbar-brand {
+}
+.carousel-item img {
+  height: 90vh;
+  object-fit: cover;
+}
+
+.searchForm {
+  width: 30% !important;
+}
+
+.moviesSection-header {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 8px 0 2px;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.moviesSection .card {
+}
+.moviesSection .card:hover .card-img-top {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+}
+.card-img-top-1 {
+  min-height: 350px;
+  max-height: 350px;
+}
+
+.moviesSection .card-body {
+  padding-left: 0;
+}
+
+.modal-content {
+  background-color: #1b1a1a;
+  max-height: 900px;
+  overflow-y: auto;
+}
+
+.modal-header {
+  border: none;
+  padding-bottom: 0;
+}
+
+.modal-footer {
+  border: none;
+  padding-top: 0;
+}
+
+.copyrightSection {
+  margin-top: 120px;
+}
+
+.copyrightSection img {
+  width: 30px;
+}
+
+.copyrightSection .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialList a {
+  padding: 6px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin: 0 2px;
+}
+.socialList a:hover {
+  background-color: #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.copyrightTag {
+  padding: 6px;
+}
